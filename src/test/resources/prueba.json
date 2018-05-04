@@ -1,0 +1,140 @@
+{
+	"name": "control-m",
+	"db_config": {
+		"db_ip": "localhost",
+		"db_port": "3306",
+		"db": "stg",
+		"db_table": "param_extract",
+		"db_operation": "create",
+		"db_user": "root",
+		"db_pass": "root"
+	},
+	"files_route": "src/test/resources",
+	"separator": ";",
+	"fields": [
+		{
+			"name": "sistema",
+			"field": "SISTEMA",
+			"format": "String",
+			"transform": null
+		},
+		{
+			"name": "fecha",
+			"field": "FECHA",
+			"format": "yymmdd",
+			"transform": "dd-mm-20yy"
+		},
+		{
+			"name": "hora",
+			"field": "HORA",
+			"format": "no esta claro",
+			"transform": "no esta claro"
+		}
+	],
+	"nested_fields": [
+		{
+			"name": "EQUIPO",
+			"field": "EQUIPO",
+			"format": "no esta claro",
+			"transform": "no esta claro"
+		},
+		{
+			"name": "NUM. SERIE",
+			"field": "NUM. SERIE",
+			"format": "no esta claro",
+			"transform": "no esta claro"
+		},
+		{
+			"name": "INTERF. TCPIP RED EXT.",
+			"field": "INTERF. TCPIP RED EXT.",
+			"format": "no esta claro",
+			"transform": "no esta claro"
+		},
+		{
+			"name": "ESTADO",
+			"field": "ESTADO",
+			"format": "no esta claro",
+			"transform": "no esta claro"
+		},
+		{
+			"name": "PORCENTAJE",
+			"field": "PORCENTAJE",
+			"format": "no esta claro",
+			"transform": "no esta claro"
+		}
+	],
+	"despised_fields": [
+		{
+			"name": "TOTAL DISCO",
+			"field": "TOTAL DISCO"
+		},
+		{
+			"name": "USOCPU",
+			"field": "USOCPU"
+		},
+		{
+			"name": "RECURSOS DEL HARDWARE",
+			"field": "RECURSOS DEL HARDWARE"
+		},
+		{
+			"name": "PROBLEMAS DEL SISTEMA",
+			"field": "PROBLEMAS DEL SISTEMA"
+		},
+		{
+			"name": "NO HAY NINGUN PROBLEMA",
+			"field": "NO HAY NINGUN PROBLEMA"
+		},
+		{
+			"name": "SOFTWARE INSTALADO",
+			"field": "SOFTWARE INSTALADO"
+		},
+		{
+			"name": "SOFTWARE CORRECTO",
+			"field": "SOFTWARE CORRECTO"
+		},
+		{
+			"name": "CONTROLADOR",
+			"field": "CONTROLADOR"
+		},
+		{
+			"name": "TODOS LOS CONTROLAD. OK",
+			"field": "TODOS LOS CONTROLAD. OK"
+		},
+		{
+			"name": "XCOM ACTIVOS",
+			"field": "XCOM ACTIVOS"
+		},
+		{
+			"name": "GESTORES MQSERIES",
+			"field": "GESTORES MQSERIES"
+		},
+		{
+			"name": "TODOS LOS GESTORES OK",
+			"field": "TODOS LOS GESTORES OK"
+		},
+		{
+			"name": "CANALES MQSERIES",
+			"field": "CANALES MQSERIES"
+		},
+		{
+			"name": "TODOS LOS CANALES OK",
+			"field": "TODOS LOS CANALES OK"
+		},
+		{
+			"name": "COLAS MQSERIES",
+			"field": "COLAS MQSERIES"
+		},
+		{
+			"name": "TODOS LAS COLAS OK",
+			"field": "TODOS LAS COLAS OK"
+		},
+		{
+			"name": "PUERTOS XCOM O MQ",
+			"field": "PUERTOS XCOM O MQ"
+		},
+		{
+			"name": "NO HAY NINGUN PROBLEMA",
+			"field": "NO HAY NINGUN PROBLEMA"
+		}
+	]
+}
