@@ -15,7 +15,6 @@
     <jboss-as.deploy.user>gbenitez</jboss-as.deploy.user>
     <jboss-as.deploy.pass>${myproject.deploy.pass.prod}</jboss-as.deploy.pass>
     <plugin.war.warName>${project.build.finalName}</plugin.war.warName>
-</properties>
 
 	</properties>
 
