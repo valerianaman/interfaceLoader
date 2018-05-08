@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>nttdata.amoh.interfaces</groupId>
 	<artifactId>fileLogManager</artifactId>
-	<version>0.0.8-SNAPSHOT</version>
+	<version>0.0.9-SNAPSHOT</version>
 	<name>fileLogManager</name>
 
 	<properties>
@@ -88,11 +88,6 @@
 					<target>${java.version}</target>
 				</configuration>
 			</plugin>
-			    <plugin>
-				<groupId>org.wildfly.plugins</groupId>
-				<artifactId>wildfly-maven-plugin</artifactId>
-				<version>1.2.1.Final</version>
-			    </plugin>
 
 
 			           <plugin>
