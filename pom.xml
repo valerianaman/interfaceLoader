@@ -11,8 +11,15 @@
 		<java.version>1.8</java.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+    <jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname>  <!-- Where to deploy. -->
+    <jboss-as.deploy.user>gbenitez</jboss-as.deploy.user>
+    <jboss-as.deploy.pass>${myproject.deploy.pass.prod}</jboss-as.deploy.pass>
+    <plugin.war.warName>${project.build.finalName}</plugin.war.warName>
+</properties>
+
 	</properties>
-	
+
+
 	<dependencies>
 		<!-- Mysql dependency also requires Googles Guava for subdivideing lists -->
 		<dependency>
@@ -89,6 +96,20 @@
 			    </plugin>
 
 
+			           <plugin>
+            <groupId>org.jboss.as.plugins</groupId>
+            <artifactId>jboss-as-maven-plugin</artifactId>
+            <version>7.4.Final</version>
+            <configuration>
+                <force>true</force>
+                <hostname>${jboss-as.deploy.hostname}</hostname>
+                <username>${jboss-as.deploy.user}</username>
+                <password>${jboss-as.deploy.pass.prod}</password>
+                <fileNames>
+                    <fileName>target/${plugin.war.warName}.war</fileName>
+                </fileNames>
+            </configuration>
+        </plugin>
 			<!-- Maven Assembly Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
